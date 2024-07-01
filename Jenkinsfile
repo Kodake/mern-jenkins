@@ -12,14 +12,7 @@ pipeline {
         stage('docker compose build') {
             steps {
                 script {
-                    bat "docker-compose build --no-cache"
-                }
-            }
-        }
-        stage('docker compose up') {
-            steps {
-                script {
-                    bat "docker-compose up"
+                    bat "docker-compose up --build -d"
                 }
             }
         }
