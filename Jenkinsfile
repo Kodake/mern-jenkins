@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         steps {
-            bat 'Test Triggers NGROK Jenkins...'
+            echo 'Test Triggers NGROK Jenkins...'
         }
         stage('docker compose down') {
             steps {
