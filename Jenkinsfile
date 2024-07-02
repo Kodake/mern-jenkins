@@ -7,7 +7,7 @@ pipeline {
 
     stages {
         steps {
-            bat 'Test Triggers When Commit...'
+            bat 'Test Triggers Commit Jenkins...'
         }
         stage('docker compose down') {
             steps {
