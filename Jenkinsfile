@@ -2,9 +2,6 @@ pipeline {
     agent any
 
     stages {
-        steps {
-            echo 'Test Triggers NGROK Jenkins...'
-        }
         stage('docker compose down') {
             steps {
                 script {
