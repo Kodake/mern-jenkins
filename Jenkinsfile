@@ -6,6 +6,9 @@ pipeline {
     }
 
     stages {
+        steps {
+            bat 'Test Triggers When Commit...'
+        }
         stage('docker compose down') {
             steps {
                 script {
