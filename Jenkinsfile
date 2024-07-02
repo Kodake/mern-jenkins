@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    triggers {
-        githubPush()
-    }
-
     stages {
         steps {
             bat 'Test Triggers NGROK Jenkins...'
